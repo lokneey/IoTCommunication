@@ -1,0 +1,22 @@
+﻿@model IoTipprograms.Models.UserModel
+
+@{
+    Layout = "~/Views/Shared/_LayoutNotLogged.cshtml";
+    ViewData["Title"] = "Zaloguj się";
+}
+
+<div align="center">
+    <form asp-action="LogIn" asp-controller="AppUsers" method="POST" class="form-max-with">
+        <div class="imgcontainer">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Antu_im-invisible-user.svg/768px-Antu_im-invisible-user.svg.png" alt="Avatar" class="avatar">
+        </div>
+        <center><h1>Zaloguj się</h1></center>
+        <div class="logincontainer" align="left">
+            <label for="UserLogin"><b>Nazwa użytkownika</b></label>
+            <input asp-for="UserLogin" placeholder="Podaj nazwę użytkownika" required>
+            <label for="UserPassword"><b>Hasło</b></label>
+            <input asp-for="UserPassword" type="password" placeholder="Podaj hasło" required>
+            <button type="submit">Zaloguj</button>            
+        </div>
+    </form>
+</div>

@@ -1,0 +1,87 @@
+﻿@model IoTipprograms.Models.MessageModel
+
+@{
+    ViewData["Title"] = "Wiadomiości";
+}
+
+<style>
+    input[type='checkbox'] {
+        display: none;
+    }
+</style>
+
+<center><h1>Wiadomości</h1></center>
+
+<div>
+    <input id="collapsible" class="toggle" type="checkbox">
+    <label for="collapsible" class="drop-form">Dodaj nową wiadomość</label>
+    <div class="collapsible-form">
+        <div class="content-inside">
+            <form method="POST">
+                <label for="MessageAuthor"><b>Autor</b></label>
+                <input asp-for="MessageAuthor" placeholder="Podaj autora wiadomości" required>
+                <label for="MessagePriority"><b>Priorytrt wiadomości (dostępne: LOW, MEDIUM, HIGH)</b></label>
+                <input asp-for="MessagePriority" placeholder="Podaj priorytrt wiadomości" required>
+                <label for="MessageDeath"><b>Data ważności wiadomości (format: dd.MM.yyyy HH:mm:ss) - opcjonanie</b></label>
+                <input asp-for="MessageDeath" placeholder="Podaj datę ważności wiadomości">
+                <label for="MessageContent"><b>Wiadomość</b></label>
+                <input asp-for="MessageContent" placeholder="Podaj treść wiadomości" required>
+                <div>
+                    <button formaction="Message" frommethod="POST" class="halfbutton to-left" type="submit" id="internet">Dodaj przez Internet</button>
+                    <button formaction="MessageNfc" frommethod="POST" class="halfbutton to-right" type="submit" id="nfc">Dodaj przez NFC</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.MessageContent)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MessageAuthor)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MessagePriority)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MessageBirth)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MessageDeath)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.MessagesList)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MessageContent)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MessageAuthor)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MessagePriority)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MessageBirth)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MessageDeath)
+                    </td>
+                    <td>
+                        @*@Html.ActionLink("Edit", "EditMessage", new { /* id=item.PrimaryKey */ }) |*@
+                        @Html.ActionLink("Delete", "DeleteMessage", "PostIot", new { messageAuthor = item.MessageAuthor, messageContent = item.MessageContent })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

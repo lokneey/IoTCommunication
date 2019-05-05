@@ -1,0 +1,186 @@
+﻿.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+footer {
+    color: #8D8D8D;
+    align-content: center;
+    font-size: smaller;
+}
+
+.purple-link {
+    color: #5600B7;
+}
+
+hr {
+    color: #8D8D8D;
+}
+
+h1 {
+    color: white;
+    font-weight: bold;
+}
+
+h4 {
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+body {
+    padding-top: 80px;
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #3F3F3F;
+}
+
+form {    
+    border: 3px solid #606DC6;
+    border-radius: 10px;
+    background-color: #606DC6;
+    color: white;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: black;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+    font-weight: bold;
+    height: initial;
+}
+
+    button:hover {
+        opacity: 0.8;
+    }
+
+table {
+    color: white;
+}
+
+.form-max-with {
+    max-width: 400px;
+}
+
+.halfbutton {
+    width: 49%;
+}
+
+.bg-shape {
+    border: 3px solid #606DC6;
+    border-radius: 10px;
+    background-color: #606DC6;
+    color: white;
+}
+
+.no-border {
+    border: none;
+}
+
+.left-space {
+    margin-left: 30px;
+}
+
+.to-right {
+    float: right;    
+}
+
+.to-left {
+    float: left;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+.logincontainer {
+    max-width: 400px;
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+.indexdiv {
+    color: white;
+    padding-top: 15%;
+    padding-bottom: 15%
+}
+
+.drop-form {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+    font-weight: bold;
+    display: block;    
+    font-size: 16px;
+    text-align: center;
+    transition: all 0.25s ease-out;
+}
+
+    .drop-form:hover {
+        opacity: 0.8;       
+    }
+
+.collapsible-form {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.25s ease-in-out;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.toggle:checked + .drop-form + .collapsible-form {
+    max-height: 4000px;
+    background-color: #606DC6;
+    
+}
+
+.collapsible-form .content-inside {
+    color: white;
+    font-weight: normal;
+    padding: 20px;
+    border: 3px solid #606DC6;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 300px) { /*(max-width: 767px) {*/
+    span .psw {
+        display: block;
+        float: none;
+    }
+}

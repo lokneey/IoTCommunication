@@ -1,0 +1,66 @@
+﻿@model IoTipprograms.Models.UserModel
+
+@{
+    ViewData["Title"] = "Użytkownicy";
+}
+<style>
+    input[type='checkbox'] {
+        display: none;
+    }
+</style>
+
+<center><h1>Użytkownicy</h1></center>
+
+@*      Pamiętaj o zabezpieczeniu widoczności na role       *@
+
+<div>
+    <input id="collapsible" class="toggle" type="checkbox">
+    <label for="collapsible" class="drop-form">Dodaj nowego użytkownika</label>
+    <div class="collapsible-form">
+        <div class="content-inside">
+            <form asp-action="Users" asp-controller="PostIot" method="POST">
+                <label for="UserLogin"><b>Nazwa użytkownika</b></label>
+                <input asp-for="UserLogin" placeholder="Podaj nazwę użytkownika" required>
+                <label for="UserPassword"><b>Hasło</b></label>
+                <input asp-for="UserPassword" placeholder="Podaj hasło" required>
+                <label for="UserRole"><b>Rola użytkownika (dostępne: ADMIN, GUEST, DEVICE, DEBUG)</b></label>
+                <input asp-for="UserRole" placeholder="Podaj rolę użytkownika" required>
+                <button type="submit">Dodaj</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.UserLogin)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.UserRole)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.UsersList)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UserLogin)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UserRole)
+                    </td>
+                    <td>
+                        @*@Html.ActionLink("Edit", "EditUser", new { /* id=item.PrimaryKey */ }) |*@
+                        @Html.ActionLink("Delete", "DeleteUser", "PostIot", new { userLogin = item.UserLogin })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

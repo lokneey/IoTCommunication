@@ -1,0 +1,11 @@
+C:\Users\Lokney\source\repos\IOTipprograms\JWTAuthApi\bin\Debug\netcoreapp2.0\JWTAuthApi.deps.json
+C:\Users\Lokney\source\repos\IOTipprograms\JWTAuthApi\bin\Debug\netcoreapp2.0\JWTAuthApi.runtimeconfig.json
+C:\Users\Lokney\source\repos\IOTipprograms\JWTAuthApi\bin\Debug\netcoreapp2.0\JWTAuthApi.runtimeconfig.dev.json
+C:\Users\Lokney\source\repos\IOTipprograms\JWTAuthApi\bin\Debug\netcoreapp2.0\JWTAuthApi.dll
+C:\Users\Lokney\source\repos\IOTipprograms\JWTAuthApi\obj\Debug\netcoreapp2.0\JWTAuthApi.csprojAssemblyReference.cache
+C:\Users\Lokney\source\repos\IOTipprograms\JWTAuthApi\obj\Debug\netcoreapp2.0\JWTAuthApi.csproj.CoreCompileInputs.cache
+C:\Users\Lokney\source\repos\IOTipprograms\JWTAuthApi\obj\Debug\netcoreapp2.0\JWTAuthApi.AssemblyInfoInputs.cache
+C:\Users\Lokney\source\repos\IOTipprograms\JWTAuthApi\obj\Debug\netcoreapp2.0\JWTAuthApi.AssemblyInfo.cs
+C:\Users\Lokney\source\repos\IOTipprograms\JWTAuthApi\bin\Debug\netcoreapp2.0\JWTAuthApi.pdb
+C:\Users\Lokney\source\repos\IOTipprograms\JWTAuthApi\obj\Debug\netcoreapp2.0\JWTAuthApi.dll
+C:\Users\Lokney\source\repos\IOTipprograms\JWTAuthApi\obj\Debug\netcoreapp2.0\JWTAuthApi.pdb

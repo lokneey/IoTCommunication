@@ -1,0 +1,11 @@
+C:\Users\Lokney\source\repos\IOTipprograms\IoTipprograms\bin\Release\netcoreapp2.0\IoTipprograms.deps.json
+C:\Users\Lokney\source\repos\IOTipprograms\IoTipprograms\bin\Release\netcoreapp2.0\IoTipprograms.runtimeconfig.json
+C:\Users\Lokney\source\repos\IOTipprograms\IoTipprograms\bin\Release\netcoreapp2.0\IoTipprograms.runtimeconfig.dev.json
+C:\Users\Lokney\source\repos\IOTipprograms\IoTipprograms\bin\Release\netcoreapp2.0\IoTipprograms.dll
+C:\Users\Lokney\source\repos\IOTipprograms\IoTipprograms\bin\Release\netcoreapp2.0\IoTipprograms.pdb
+C:\Users\Lokney\source\repos\IOTipprograms\IoTipprograms\obj\Release\netcoreapp2.0\IoTipprograms.csproj.CoreCompileInputs.cache
+C:\Users\Lokney\source\repos\IOTipprograms\IoTipprograms\obj\Release\netcoreapp2.0\IoTipprograms.AssemblyInfoInputs.cache
+C:\Users\Lokney\source\repos\IOTipprograms\IoTipprograms\obj\Release\netcoreapp2.0\IoTipprograms.AssemblyInfo.cs
+C:\Users\Lokney\source\repos\IOTipprograms\IoTipprograms\obj\Release\netcoreapp2.0\IoTipprograms.dll
+C:\Users\Lokney\source\repos\IOTipprograms\IoTipprograms\obj\Release\netcoreapp2.0\IoTipprograms.pdb
+C:\Users\Lokney\source\repos\IOTipprograms\IoTipprograms\obj\Release\netcoreapp2.0\IoTipprograms.csprojAssemblyReference.cache
