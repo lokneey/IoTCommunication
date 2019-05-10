@@ -1,4 +1,4 @@
-This is full project of comunication between: device, server and web app. Project is easy to modify and extend thanks to its module construction. 
+This is full project of comunication between: device, server and web app. Project is easy to modify and extend due to its modular construction. 
 
 The core of project is server REST api which manage and process sended data or data included in database. Api allows to add, remove, change users and messages. In this server app there is implemented JWT authoristion mechanizm.
 
